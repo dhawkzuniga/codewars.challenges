@@ -1,3 +1,16 @@
+// ***THURSDAY FEB 19****
+// Numbers ending with zeros are boring.They might be fun in your world, but not here.Get rid of them. Only the ending ones.
+
+function noBoringZeros(n) {
+  if (n===0){
+    return n
+  }
+  while(n%10===0){
+    n /= 10
+  }
+  return n
+}
+
 // ***WEDNESDAY FEB 18***
 
 // Build a function that returns an array of integers from n to 1 where n>0.
