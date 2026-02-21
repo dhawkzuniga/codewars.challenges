@@ -1,3 +1,16 @@
+// SAT FEB 21***
+// You are given a string containing a sequence of character sequences separated by commas.
+// Write a function which returns a new string containing the same character sequences except the first and the last ones but this time separated by spaces.
+// If the input string is empty or the removal of the first and last items would cause the resulting string to be empty, return an empty value
+function array(string) {
+  let result = string.split(',')
+  result.shift()
+  result.pop()
+  result = result.join (' ')
+  return result ? result :null
+}
+
+
 // ***THURSDAY FEB 19****
 // Numbers ending with zeros are boring.They might be fun in your world, but not here.Get rid of them. Only the ending ones.
 
