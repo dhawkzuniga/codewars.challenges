@@ -1,3 +1,17 @@
+// Friday and Saturday March 6th and 7th
+// How many licks does it take to get to the tootsie roll center of a tootsie pop? Full instructions on Code Wars
+
+function totalLicks(env) {
+  let lickNum = 252
+  for (let key in env){
+    lickNum += env[key]
+  }
+  let maxVal = Math.max(...Object.values(env))
+  let maxKey = Object.keys(env).find(k=> env[k]==maxVal)
+  return maxVal > 0 ? `It took ${lickNum} licks to get to the tootsie roll center of a tootsie pop. The toughest challenge was ${maxKey}.`: `It took ${lickNum} licks to get to the tootsie roll center of a tootsie pop.`
+}
+
+
 // Thursday and Friday March 5th and 6th
 // Given an array of integers , Find the maximum product obtained from multiplying 2 adjacent numbers in the array. Note that the array size is at least 2 and consists a mixture of positive, negative integers and also zeroes.
 
