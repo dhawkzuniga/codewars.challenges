@@ -1,5 +1,17 @@
-// Wednesday March 11th Practice
+// Thursday March 12th Practice, repeating Tuesday's challenge
+function isKiss( wordList ){
+  let arr = wordList.split(' ')
+  console.log (arr)
+  for (let word of arr){
+    if (word.length > arr.length){
+      return 'Keep It Simple Stupid'
+    }
+  }
+  return 'Good work Joe!'
+}
 
+
+// Wednesday March 11th Practice
 // Check your arrows
 function arrowCheck(arrOfObj){
   return arrOfObj.some(obj=> !obj.damaged)
