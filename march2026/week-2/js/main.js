@@ -1,3 +1,11 @@
+// Saturday March 14th
+// Return the average of the given array rounded down to its nearest integer.
+
+function getAverage(marks){
+  let sum = marks.reduce((acc,c)=>acc+c,0)
+  return Math.floor(sum / marks.length)
+}
+
 // Friday MArch 13th
 // You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
 
