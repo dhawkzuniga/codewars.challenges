@@ -1,3 +1,15 @@
+// Wednesday March 18th
+// Return the number (count) of vowels in the given string.
+function getCount(str) {
+  let vowelCount = 0
+  let newArr = str.split('')
+  newArr.forEach(letter=> {
+    if (letter ==='a'||letter ==='e'||letter ==='i'||letter ==='o'||letter ==='u')
+      vowelCount += 1
+  })
+  return vowelCount
+}
+
 //Tuesday March 17th
 // You will be given an array of object literals holding the current employees of the company. You code must find the employee with the matching firstName and lastName and then return the role for that employee or if no employee is not found it should return "Does not work here!"
 
