@@ -1,3 +1,27 @@
+//Tuesday March 17th
+// You will be given an array of object literals holding the current employees of the company. You code must find the employee with the matching firstName and lastName and then return the role for that employee or if no employee is not found it should return "Does not work here!"
+
+function findEmployeesRole(name) {
+  let splitName = name.split(' ')
+  let selectedFirstName = splitName[0]
+  let selectedLastName = splitName[1]
+  
+  let selectedEmployee = employees.find(obj=> {
+   return (obj.firstName === selectedFirstName) && (obj.lastName ===selectedLastName)})
+
+  if (!selectedEmployee){
+    return "Does not work here!"
+  }else {
+    return selectedEmployee.role
+  }
+}
+
+//Monday March 16th
+// calculate the 3rd angle of a triangle
+function otherAngle(a, b) {
+  return 180 - a - b
+}
+
 // Saturday March 14th
 // Return the average of the given array rounded down to its nearest integer.
 
