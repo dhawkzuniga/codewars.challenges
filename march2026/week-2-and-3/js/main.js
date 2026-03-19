@@ -1,3 +1,28 @@
+//Thursday March 19th Practice
+// heads or tails
+function headsOrTails(){
+  let num = Math.random()
+  if (num>.5){
+    return 'heads'
+  } else{
+    return 'tails'
+  }
+}
+// or
+let headsOrTails = ()=> Math.random > .5 ? 'heads': 'tails'
+
+// write a function that removes any geese from an array of birds
+function geeseRemover(arrOfBirds){
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+  return arrOfBirds.filter(bird=> !geese.includes(bird))
+}
+console.log(geeseRemover( ["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
+
+// Write a sentence that smashes words together
+function sentenceSmash(arrOfWords){
+  return arrOfWords.join(' ')
+}
+
 // Wednesday March 18th
 // Return the number (count) of vowels in the given string.
 function getCount(str) {
