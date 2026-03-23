@@ -1,3 +1,30 @@
+//Friday MArch 20th Practice
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+function numberCount(arr){
+  let numOne = 0
+  arr.forEach(num=> {
+    if (num>0){
+      numOne += 1
+    }
+  })
+  let negArr = arr.filter(x=> x<0)
+  let numTwo = negArr.reduce((acc,C)=> acc + C,0)
+
+  return [numOne, numTwo]
+}
+
+// wide mouthed frog
+function mouthSize(animal){
+  return animal.toLowerCase === 'alligator'? 'small':'wide'
+}
+
+// remove the geese one more time
+function removeGeeseAgain(arr){
+  let geese =   ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"]
+  return arr.filter(bird=> !geese.includes(bird))
+}
+
+
 //Thursday March 19th Practice
 // heads or tails
 function headsOrTails(){
@@ -22,6 +49,7 @@ console.log(geeseRemover( ["Mallard", "Hook Bill", "African", "Crested", "Pilgri
 function sentenceSmash(arrOfWords){
   return arrOfWords.join(' ')
 }
+
 
 // Wednesday March 18th
 // Return the number (count) of vowels in the given string.
