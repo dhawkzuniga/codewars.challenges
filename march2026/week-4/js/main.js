@@ -1,3 +1,69 @@
+//Thursday March 29th
+//Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
+class Ghost {
+  constructor(){
+    this.color = ['white','yellow','purple','red'][Math.floor(Math.random()*4)]
+  }
+}
+
+//make building blocks with widths, heights, lengths, volumes, and surface areas
+
+class Block{
+  constructor(arr){
+    this.width = arr[0]
+    this.length = arr [1]
+    this.height = arr [2]
+  }
+  getWidth(){
+    return this.width
+  }
+  getLength(){
+    return this.length
+  }
+  getHeight(){
+    return this.height
+  }
+  getVolume(){
+    return this.length * this.width * this.height
+  }
+  getSurfaceArea(){
+    return 2 * ((this.length * this.width)+ (this.length * this.height)+ (this.width * this.height))
+  }
+}
+//Wednesday March 28th
+//For this exercise you should create a JavaScript class called Animal
+class Animal{
+  constructor(name, type){
+    this.name = name
+    this.type = type
+  }
+  toString(){return `${this.name} is a ${this.type}`}
+}
+
+//evaluate if ships should be looted
+class Ship{
+  constructor(draft, crew){
+    this.draft = draft 
+    this.crew = crew
+  }
+  isWorthIt(){
+    return this.draft - (this.crew * 1.5) > 20 ? true: false
+  }
+}
+
+
+//Tuesday March 27th
+//Your task is to extend the JavaScript Array object with methods .first() and .last(), so you can get the first respectively the last element of the array.
+
+let a = [2, 5, 7, 3 ,4];
+
+Array.prototype.first = function (){
+  return this[0]
+}
+Array.prototype.last= function (){
+  return this[this.length - 1]
+}
+
 //Monday March 26
 //Define a variable person which stores an object literal. The object literal should have a first name, last name, and a getter and setter for full name
 let person = {
