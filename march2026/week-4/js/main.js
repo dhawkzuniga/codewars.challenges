@@ -1,3 +1,17 @@
+//Friday March 30
+//Your task is to complete this Class, the Person class has been created. You must fill in the Constructor method to accept a name as string and an age as number, complete the get Info property and getInfo method/Info getter which should return johns age is 34
+
+class Person{
+  constructor(name, age){
+    this.name = name
+    this.age = Number(age)
+  }
+    get info() {
+    return (`${this.name}s age is ${this.age}`)
+  }
+}
+
+
 //Thursday March 29th
 //Ghost objects are given a random color attribute of "white" or "yellow" or "purple" or "red" when instantiated
 class Ghost {
