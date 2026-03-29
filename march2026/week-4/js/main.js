@@ -1,3 +1,12 @@
+//Sunday March 29
+// You need to make a constructor function with two methods (and only these two methods) to return and increment a counter, but the counter should not be directly accessible from outside the function.
+
+function Counter() {
+  let i = 0
+  this.check = function (){ return i}; 
+  this.increment = function (){ i += 1};
+}
+
 //Friday March 30
 //Your task is to complete this Class, the Person class has been created. You must fill in the Constructor method to accept a name as string and an age as number, complete the get Info property and getInfo method/Info getter which should return johns age is 34
 
