@@ -1,3 +1,18 @@
+//Thursday April 2
+//Refactor a given function into a class
+class Person{
+  constructor(name){
+    this._name = name
+  }
+  get name (){
+    return this._name
+  }
+  greet (yourName){
+    return `Hello ${yourName}, my name is ${this._name}`
+  }
+}
+
+
 //Wednesday April 1
 //make a constructor cuboid with a cube class extension
 class Cuboid {
