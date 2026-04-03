@@ -1,3 +1,14 @@
+//Friday April 3
+//Take in a number of hackers, and evaluate if they are blocked. If so, the system increases security level
+
+function breachAttempts(hackers, securityLevel, increase) {
+  let breachCounter = 0
+  for (element of hackers){
+    element > securityLevel ? breachCounter += 1 : securityLevel += increase
+  }
+  return breachCounter
+}
+
 //Thursday April 2
 //Refactor a given function into a class
 class Person{
