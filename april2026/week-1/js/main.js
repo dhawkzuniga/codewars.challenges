@@ -1,3 +1,23 @@
+//Sat April 4th
+//The goal of this code is to create an array of objects that stores a player's name and contact number from a given string.
+
+function playerManager(players) {
+  let result = []
+  
+  if (players === null|| players === ''){
+    return []
+  } else{
+    let arr = players.split(', ')
+    
+    for (let i=0; i < arr.length; i++){
+      result.push({'player': arr[i],'contact': parseInt (arr[i+1])})
+      i += 1
+    }
+    return result
+  }
+}
+
+
 //Friday April 3
 //Take in a number of hackers, and evaluate if they are blocked. If so, the system increases security level
 
