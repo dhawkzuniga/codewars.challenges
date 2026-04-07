@@ -1,3 +1,30 @@
+//Tuesday April 7th- Review
+//Write a function that will check if two given characters are the same case.
+
+function sameCaseCheck(x,y){
+    if (x.toUpperCase() === x.toLowerCase() || y.toUpperCase()=== y.toLowerCase()){
+        return -1
+    } else if (((x.toUpperCase === x) &&(y.toUpperCase === y)) || ((x.toLowerCase()=== x) && (y.toLowerCase()===y))){
+        return 1
+    } else{
+        return 0
+    }
+}
+console.log(sameCaseCheck('?','a'))
+console.log(sameCaseCheck('a','b'))
+console.log(sameCaseCheck('a','B'))
+
+// Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers. 
+
+function arrayCounting(nums){
+    let posCount = nums.filter(x=> x>0).length
+    let negNums = nums.filter(x=>x<0)
+    let negSum = negNums.reduce((acc,c)=>acc + c)
+    return [posCount, negSum]
+}
+console.log( arrayCounting([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15]))
+
+
 //Monday April 6th--Array challenge ladder
 
 //8 kyu Complete the square sum function so that it squares each number passed into it and then sums the results together.
