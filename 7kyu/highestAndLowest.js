@@ -1,8 +1,7 @@
-//In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+// Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list.
 
-function highAndLow(numbers){
-  let arrOfNums = numbers.split(' ')
-  let maxNum = Math.max(...arrOfNums)
-  let minNum = Math.min(...arrOfNums)
-  return (`${maxNum} ${minNum}`)
+
+function removeSmallest(numbers) {
+  let indexOfMin = numbers.indexOf(Math.min(...numbers));
+  return [...numbers.slice(0, indexOfMin), ...numbers.slice(indexOfMin + 1)];
 }
